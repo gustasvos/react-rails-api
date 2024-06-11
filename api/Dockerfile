@@ -1,5 +1,5 @@
 FROM ruby:2.7.6
-RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
+RUN apt-get update -qq && apt-get install -y nano nodejs postgresql-client
 WORKDIR /api
 COPY . .
 COPY Gemfile /api/Gemfile
